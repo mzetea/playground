@@ -5,7 +5,10 @@ Activate environment
 run "pip install -r reqs.txt"
 
 cd basic
-#run tests
+#run tests. Make sure that you have a simple http server running on port 9090 in the test_data dir
+cd test_data
+python -m SimpleHTTPServer 9090
+cd ../
 python -m unittest
 
 #run application
