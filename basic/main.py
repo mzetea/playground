@@ -149,5 +149,6 @@ if __name__ == "__main__":
     domain = input("Please enter a domain to scrape\n")
     spider = Spider(domain)
     spider.retrieve_content()
+    print(spider.resources.read_all())
     import pdb; pdb.set_trace()
 
